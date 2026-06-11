@@ -1,831 +1,469 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Picos Plast — Distribuidora de embalagens descartáveis e materiais plásticos. Atendemos todo o Piauí com logística própria. Fale pelo WhatsApp!"
-    />
-    <title>Picos Plast | Embalagens e Descartáveis — Picos, PI</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <!-- Phosphor Icons -->
-    <script
-      src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js"
-      defer
-    ></script>
-  </head>
-  <body>
-    <!-- ===== NAVBAR ===== -->
-    <nav class="navbar" id="navbar">
-      <div class="nav-shimmer"></div>
-      <div class="nav-container">
-        <a href="index.html" class="nav-logo"
-          ><img
-            src="assets/images/logo.png"
-            alt="Picos Plast"
-            onerror="this.style.display = 'none'"
-          /><span><em>Picos</em>Plast</span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Picos Plast — Distribuidora de embalagens descartáveis e materiais plásticos. Atendemos todo o Piauí com logística própria e entrega rápida." />
+  <title>Picos Plast | Embalagens e Descartáveis — Picos, PI</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js" defer></script>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/images/logo.png" alt="Picos Plast" onerror="this.style.display='none'" />
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="produtos.html">Produtos</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="contato.html">Contato</a></li>
+      <li><a href="trabalhe.html">Trabalhe Conosco</a></li>
+      <li><a href="assets/docs/CATALOGO-2019-2020.pdf" target="_blank" download class="nav-cta">📋 Catálogo</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <!-- Camadas de fundo -->
+  <div class="hero-bg"></div>
+  <div class="hero-dots"></div>
+  <div class="hero-scan"></div>
+
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="badge">Referência no Piauí desde 2011</div>
+      <h1>
+        Embalagens e<br />
+        <span>Descartáveis</span><br />
+        <em>para seu negócio</em>
+      </h1>
+      <p>Distribuidora líder em embalagens para fast food, confeitaria, sorveteria e panificação. Atendemos todo o Piauí com logística própria e entrega rápida.</p>
+      <div class="hero-btns">
+        <a href="https://wa.me/5589997337890?text=Olá!%20Quero%20fazer%20um%20pedido." target="_blank" class="btn btn-primary btn-lg">
+          <i class="ph-fill ph-whatsapp-logo"></i> Falar no WhatsApp
         </a>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="index.html" class="active">Home</a></li>
+        <a href="produtos.html" class="btn btn-outline btn-lg">Ver Produtos →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="num" data-count="14" data-suffix="+ anos">+14<em>anos</em></div>
+          <div class="label">No mercado</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num">12<em>+</em></div>
+          <div class="label">Categorias</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num">50<em>+</em></div>
+          <div class="label">Cidades atendidas</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-grid">
+        <div class="hero-card">
+          <div class="emoji">🥡</div>
+          <div class="label">Descartáveis</div>
+        </div>
+        <div class="hero-card">
+          <div class="emoji">🎂</div>
+          <div class="label">Confeitaria & Panificação</div>
+        </div>
+        <div class="hero-card">
+          <div class="emoji">🍦</div>
+          <div class="label">Sorveteria</div>
+        </div>
+        <div class="hero-card">
+          <div class="emoji">🧴</div>
+          <div class="label">Limpeza & Utilidades</div>
+        </div>
+        <div class="hero-card span-2">
+          <div class="emoji">🚚</div>
+          <div class="label">Logística própria em todo o Piauí</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DIFERENCIAIS ===== -->
+<section class="section section-gray">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="overline">Por que escolher a Picos Plast?</div>
+      <h2>Diferenciais que fazem a diferença</h2>
+      <p>Mais de 14 anos entregando qualidade, praticidade e parceria para negócios do Piauí.</p>
+    </div>
+    <div class="diferenciais-grid">
+      <div class="diferencial-card reveal reveal-delay-1">
+        <div class="icon">🚚</div>
+        <h3>Logística Própria</h3>
+        <p>Frota própria para entregas rápidas e seguras em todo o estado do Piauí.</p>
+      </div>
+      <div class="diferencial-card reveal reveal-delay-2">
+        <div class="icon">📦</div>
+        <h3>Estoque Completo</h3>
+        <p>Mais de 12 categorias e centenas de produtos prontos para pronta-entrega.</p>
+      </div>
+      <div class="diferencial-card reveal reveal-delay-3">
+        <div class="icon">🤝</div>
+        <h3>Atendimento B2B</h3>
+        <p>Equipe especializada no atendimento a empresas de todos os portes.</p>
+      </div>
+      <div class="diferencial-card reveal reveal-delay-4">
+        <div class="icon">♻️</div>
+        <h3>Compromisso Ambiental</h3>
+        <p>Reciclagem de plásticos e papelões transformados em novos produtos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SEGMENTOS ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="overline">Quem atendemos</div>
+      <h2>Soluções para cada segmento</h2>
+      <p>Seja qual for o seu negócio de alimentação, temos as embalagens certas para você.</p>
+    </div>
+    <div class="segmentos-row reveal">
+      <div class="segmento-tag">🥐 Padarias e Confeitarias</div>
+      <div class="segmento-tag">🍦 Sorveteiros</div>
+      <div class="segmento-tag">🍕 Pizzarias</div>
+      <div class="segmento-tag">🍽️ Restaurantes</div>
+      <div class="segmento-tag">🥩 Frigoríficos</div>
+      <div class="segmento-tag">🛒 Supermercados</div>
+      <div class="segmento-tag">🎉 Festas e Eventos</div>
+      <div class="segmento-tag">🍔 Fast Food</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRODUTOS DESTAQUE ===== -->
+<section class="section section-gray">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="overline">Nosso Catálogo</div>
+      <h2>Produtos para todos os segmentos</h2>
+      <p>12 categorias completas com produtos de qualidade para o seu negócio crescer.</p>
+    </div>
+    <div class="produtos-grid">
+      <a href="produtos.html" class="produto-card reveal reveal-delay-1">
+        <div class="emoji">🥡</div>
+        <h3>Descartáveis</h3>
+        <p>Copos, pratos, bandejas, embalagens para delivery e fast food.</p>
+        <span class="arrow">Ver produtos →</span>
+      </a>
+      <a href="produtos.html" class="produto-card reveal reveal-delay-2">
+        <div class="emoji">🎂</div>
+        <h3>Confeitaria e Panificação</h3>
+        <p>Embalagens para bolos, tortas, pães e produtos de confeitaria.</p>
+        <span class="arrow">Ver produtos →</span>
+      </a>
+      <a href="produtos.html" class="produto-card reveal reveal-delay-3">
+        <div class="emoji">🍦</div>
+        <h3>Sorveteria</h3>
+        <p>Potes, copinhos, palitos e embalagens para sorvetes e açaí.</p>
+        <span class="arrow">Ver produtos →</span>
+      </a>
+      <a href="produtos.html" class="produto-card reveal reveal-delay-1">
+        <div class="emoji">❄️</div>
+        <h3>Caixas Térmicas</h3>
+        <p>Caixas de isopor e soluções térmicas para conservação de alimentos.</p>
+        <span class="arrow">Ver produtos →</span>
+      </a>
+      <a href="produtos.html" class="produto-card reveal reveal-delay-2">
+        <div class="emoji">🛍️</div>
+        <h3>Sacos e Sacolas</h3>
+        <p>Sacolas plásticas, sacos para lixo e embalagens flexíveis.</p>
+        <span class="arrow">Ver produtos →</span>
+      </a>
+      <a href="produtos.html" class="produto-card reveal reveal-delay-3">
+        <div class="emoji">🎉</div>
+        <h3>Festas e Eventos</h3>
+        <p>Descartáveis especiais, acrílicos e itens para eventos e festas.</p>
+        <span class="arrow">Ver produtos →</span>
+      </a>
+    </div>
+    <div style="text-align:center; margin-top:44px" class="reveal">
+      <a href="produtos.html" class="btn btn-blue btn-lg">Ver todos os produtos →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COBERTURA ===== -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="cobertura-wrap">
+      <div class="cobertura-map reveal">
+        <div style="text-align:center; position:relative; z-index:1;">
+          <div style="font-size:5rem; margin-bottom:16px">🗺️</div>
+          <p style="color:var(--on-dark-3); font-size:.875rem">Cobertura em todo o Piauí</p>
+        </div>
+      </div>
+      <div class="cobertura-text reveal">
+        <div class="overline">Atendemos todo o Piauí</div>
+        <h2>Sua região também é <span>nossa região</span></h2>
+        <p>Com frota própria e logística estruturada, a Picos Plast entrega em dezenas de cidades do Piauí, garantindo agilidade e confiança para o seu negócio.</p>
+        <div class="cidades-grid">
+          <div class="cidade-tag">📍 Picos</div>
+          <div class="cidade-tag">📍 Floriano</div>
+          <div class="cidade-tag">📍 Oeiras</div>
+          <div class="cidade-tag">📍 Patos</div>
+          <div class="cidade-tag">📍 Jaicós</div>
+          <div class="cidade-tag">📍 Fronteiras</div>
+          <div class="cidade-tag">📍 Pio IX</div>
+          <div class="cidade-tag">📍 Wall Ferraz</div>
+          <div class="cidade-tag">📍 + 40 cidades</div>
+        </div>
+        <a href="contato.html" class="btn btn-primary">📦 Solicitar entrega na minha cidade</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VÍDEO INSTITUCIONAL ===== -->
+<section class="section section-gray">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="overline">Conheça a Picos Plast</div>
+      <h2>Vídeo Institucional</h2>
+      <p>Veja como trabalhamos e por que somos a distribuidora de referência no Piauí.</p>
+    </div>
+    <div style="max-width:860px; margin:0 auto" class="reveal">
+      <div style="position:relative; padding-top:56.25%; border-radius:20px; overflow:hidden; box-shadow:var(--shadow-2xl)">
+        <video controls preload="metadata" style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; background:var(--bg)" aria-label="Vídeo Institucional Picos Plast">
+          <source src="assets/videos/video_institucional.mp4" type="video/mp4" />
+          Seu navegador não suporta reprodução de vídeo.
+        </video>
+      </div>
+      <div style="display:flex; gap:0; justify-content:center; margin-top:32px; border:1px solid var(--border); border-radius:16px; overflow:hidden; background:var(--surface)">
+        <div style="flex:1; text-align:center; padding:24px 16px; border-right:1px solid var(--border)">
+          <div style="font-size:1.7rem; font-weight:900; color:var(--text-1); letter-spacing:-.05em">+14 <span style="color:var(--red)">anos</span></div>
+          <div style="font-size:.7rem; color:var(--text-4); margin-top:6px; text-transform:uppercase; letter-spacing:.8px">de mercado</div>
+        </div>
+        <div style="flex:1; text-align:center; padding:24px 16px; border-right:1px solid var(--border)">
+          <div style="font-size:1.7rem; font-weight:900; color:var(--text-1); letter-spacing:-.05em">50<span style="color:var(--red)">+</span></div>
+          <div style="font-size:.7rem; color:var(--text-4); margin-top:6px; text-transform:uppercase; letter-spacing:.8px">cidades</div>
+        </div>
+        <div style="flex:1; text-align:center; padding:24px 16px; border-right:1px solid var(--border)">
+          <div style="font-size:1.7rem; font-weight:900; color:var(--text-1); letter-spacing:-.05em">12<span style="color:var(--red)">+</span></div>
+          <div style="font-size:.7rem; color:var(--text-4); margin-top:6px; text-transform:uppercase; letter-spacing:.8px">categorias</div>
+        </div>
+        <div style="flex:1; text-align:center; padding:24px 16px">
+          <div style="font-size:1.7rem; font-weight:900; color:var(--text-1); letter-spacing:-.05em">4 <span style="color:var(--red)">lojas</span></div>
+          <div style="font-size:.7rem; color:var(--text-4); margin-top:6px; text-transform:uppercase; letter-spacing:.8px">+ distribuição</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MARCAS PARCEIRAS ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal" style="margin-bottom:40px">
+      <div class="overline">Trabalhamos com as melhores marcas</div>
+      <h2>Marcas que vendemos</h2>
+    </div>
+    <div class="brands-carousel reveal">
+      <button class="brands-btn" id="brandsPrev" aria-label="Anterior">&#8249;</button>
+      <div class="brands-viewport" id="brandsViewport">
+        <div class="brands-track" id="brandsTrack">
+          <div class="brand-item"><a href="https://www.alispec.com.br/" target="_blank"><img src="assets/images/clientes/alispec.png" alt="Alispec" /></a><span>Alispec</span></div>
+          <div class="brand-item"><a href="https://arcolor.com.br/" target="_blank"><img src="assets/images/clientes/arcolor_confeitaria.png" alt="Arcolor" /></a><span>Arcolor</span></div>
+          <div class="brand-item"><a href="https://bomsabor.com.br/" target="_blank"><img src="assets/images/clientes/bom_sabor_alimentos.png" alt="Bom Sabor" /></a><span>Bom Sabor</span></div>
+          <div class="brand-item"><a href="https://cacaufoods.com.br/" target="_blank"><img src="assets/images/clientes/cacal_food.png" alt="Cacal Food" /></a><span>Cacal Foods</span></div>
+          <div class="brand-item"><a href="https://www.drfi.com/" target="_blank"><img src="assets/images/clientes/grupo_duas_rodas.png" alt="Duas Rodas" /></a><span>Duas Rodas</span></div>
+          <div class="brand-item"><a href="https://ultradescartaveis.com.br/" target="_blank"><img src="assets/images/clientes/grupo_ultra.png" alt="Grupo Ultra" /></a><span>Grupo Ultra</span></div>
+          <div class="brand-item"><a href="https://hulala.com.br/" target="_blank"><img src="assets/images/clientes/hulala_cremes.png" alt="Hulalá" /></a><span>Hulalá</span></div>
+          <div class="brand-item"><a href="https://jazamalimentos.com.br/" target="_blank"><img src="assets/images/clientes/jazam_alimentos.png" alt="Jazam" /></a><span>Jazam</span></div>
+          <div class="brand-item"><a href="https://polipor.com.br/" target="_blank"><img src="assets/images/clientes/polipor.png" alt="Polipor" /></a><span>Polipor</span></div>
+          <div class="brand-item"><a href="https://www.totalplast.com.br/" target="_blank"><img src="assets/images/clientes/total_plast.png" alt="Total Plast" /></a><span>Total Plast</span></div>
+          <!-- duplicados para loop contínuo -->
+          <div class="brand-item"><a href="https://www.alispec.com.br/" target="_blank"><img src="assets/images/clientes/alispec.png" alt="Alispec" /></a><span>Alispec</span></div>
+          <div class="brand-item"><a href="https://arcolor.com.br/" target="_blank"><img src="assets/images/clientes/arcolor_confeitaria.png" alt="Arcolor" /></a><span>Arcolor</span></div>
+          <div class="brand-item"><a href="https://bomsabor.com.br/" target="_blank"><img src="assets/images/clientes/bom_sabor_alimentos.png" alt="Bom Sabor" /></a><span>Bom Sabor</span></div>
+          <div class="brand-item"><a href="https://cacaufoods.com.br/" target="_blank"><img src="assets/images/clientes/cacal_food.png" alt="Cacal Food" /></a><span>Cacal Foods</span></div>
+          <div class="brand-item"><a href="https://www.drfi.com/" target="_blank"><img src="assets/images/clientes/grupo_duas_rodas.png" alt="Duas Rodas" /></a><span>Duas Rodas</span></div>
+          <div class="brand-item"><a href="https://ultradescartaveis.com.br/" target="_blank"><img src="assets/images/clientes/grupo_ultra.png" alt="Grupo Ultra" /></a><span>Grupo Ultra</span></div>
+          <div class="brand-item"><a href="https://hulala.com.br/" target="_blank"><img src="assets/images/clientes/hulala_cremes.png" alt="Hulalá" /></a><span>Hulalá</span></div>
+          <div class="brand-item"><a href="https://jazamalimentos.com.br/" target="_blank"><img src="assets/images/clientes/jazam_alimentos.png" alt="Jazam" /></a><span>Jazam</span></div>
+          <div class="brand-item"><a href="https://polipor.com.br/" target="_blank"><img src="assets/images/clientes/polipor.png" alt="Polipor" /></a><span>Polipor</span></div>
+          <div class="brand-item"><a href="https://www.totalplast.com.br/" target="_blank"><img src="assets/images/clientes/total_plast.png" alt="Total Plast" /></a><span>Total Plast</span></div>
+        </div>
+      </div>
+      <button class="brands-btn" id="brandsNext" aria-label="Próximo">&#8250;</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="section-sm">
+  <div class="container">
+    <div class="cta-banner reveal">
+      <div>
+        <h2>Pronto para fazer seu pedido?</h2>
+        <p>Fale diretamente com nossa equipe pelo WhatsApp. Atendimento rápido e personalizado.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="https://wa.me/5589997337890?text=Olá!%20Quero%20fazer%20um%20pedido." target="_blank" class="btn btn-white btn-lg">
+          <i class="ph-fill ph-whatsapp-logo"></i> Chamar no WhatsApp agora
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="assets/images/logo.png" alt="Picos Plast" style="height:44px;width:auto;object-fit:contain" />
+        </div>
+        <p>Distribuidora referência em embalagens descartáveis e materiais plásticos para todo o Piauí desde 2011.</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/picosplast" target="_blank" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><defs><radialGradient id="ig1" cx="30%" cy="107%" r="150%"><stop offset="0%" stop-color="#fdf497"/><stop offset="45%" stop-color="#fd5949"/><stop offset="60%" stop-color="#d6249f"/><stop offset="90%" stop-color="#285AEB"/></radialGradient></defs><path fill="url(#ig1)" d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.336 3.608 1.311.975.975 1.249 2.242 1.311 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.336 2.633-1.311 3.608-.975.975-2.242 1.249-3.608 1.311-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.336-3.608-1.311-.975-.975-1.249-2.242-1.311-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.336-2.633 1.311-3.608.975-.975 2.242-1.249 3.608-1.311C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.333.014 7.053.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.053.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.085 1.856.601 3.698 1.942 5.038 1.341 1.341 3.183 1.857 5.039 1.942C8.333 23.986 8.741 24 12 24s3.667-.014 4.947-.072c1.856-.085 3.698-.601 5.038-1.942 1.341-1.34 1.857-3.182 1.942-5.038.058-1.28.072-1.689.072-4.948 0-3.259-.014-3.667-.072-4.947-.085-1.856-.601-3.698-1.942-5.039C20.645.673 18.803.157 16.947.072 15.667.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></a>
+          <a href="https://linkedin.com/company/picosplast" target="_blank" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#0077b5" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+          <a href="https://www.youtube.com/@picosplast9400" target="_blank" aria-label="YouTube"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#FF0000" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
           <li><a href="produtos.html">Produtos</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
           <li><a href="contato.html">Contato</a></li>
           <li><a href="trabalhe.html">Trabalhe Conosco</a></li>
-          <li>
-            <a
-              href="assets/docs/CATALOGO-2019-2020.pdf"
-              target="_blank"
-              download
-              class="nav-cta"
-              >📋 Catálogo</a
-            >
-          </li>
         </ul>
-        <button class="nav-toggle" id="navToggle" aria-label="Menu">
-          <span></span><span></span><span></span>
-        </button>
       </div>
-    </nav>
-
-    <!-- ===== HERO ===== -->
-    <section class="hero">
-      <div class="hero-content">
-        <div class="hero-text">
-          <div class="badge">⭐ Referência no Piauí desde 2011</div>
-          <h1>
-            Embalagens e<br /><span>Descartáveis</span><br />para seu
-            empreendimento
-          </h1>
-          <p>
-            Distribuidora líder em embalagens para fast food, confeitaria,
-            sorveteria e panificação. Atendemos todo o Piauí com logística
-            própria e entrega rápida.
-          </p>
-          <div class="hero-btns">
-            <a
-              href="https://wa.me/5589997337890?text=Olá!%20Quero%20fazer%20um%20pedido."
-              target="_blank"
-              class="btn btn-primary btn-lg"
-            >
-              <i class="ph-fill ph-whatsapp-logo"></i> Falar no WhatsApp
-            </a>
-            <a href="produtos.html" class="btn btn-outline btn-lg"
-              >Ver Produtos →</a
-            >
-          </div>
-          <div class="hero-stats">
-            <div class="hero-stat">
-              <div class="num">+14<span>anos</span></div>
-              <div class="label">No mercado</div>
-            </div>
-            <div class="hero-stat">
-              <div class="num">12<span>+</span></div>
-              <div class="label">Categorias</div>
-            </div>
-            <div class="hero-stat">
-              <div class="num">50<span>+</span></div>
-              <div class="label">Cidades atendidas</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-visual">
-          <div class="hero-badge-wrap">
-            <div class="hero-card-item">
-              <div class="emoji">🥡</div>
-              <div class="name">Descartáveis</div>
-            </div>
-            <div class="hero-card-item">
-              <div class="emoji">🎂</div>
-              <div class="name">Confeitaria & Panificação</div>
-            </div>
-            <div class="hero-card-item">
-              <div class="emoji">🍦</div>
-              <div class="name">Sorveteria</div>
-            </div>
-            <div class="hero-card-item">
-              <div class="emoji">🧴</div>
-              <div class="name">Limpeza & Utilidades</div>
-            </div>
-            <div class="hero-card-item" style="grid-column: span 2">
-              <div class="emoji">🚚</div>
-              <div class="name">Logística própria em todo o Piauí</div>
-            </div>
-          </div>
-        </div>
+      <div>
+        <h4>Produtos</h4>
+        <ul>
+          <li><a href="produtos.html">Descartáveis</a></li>
+          <li><a href="produtos.html">Confeitaria</a></li>
+          <li><a href="produtos.html">Sorveteria</a></li>
+          <li><a href="produtos.html">Caixas Térmicas</a></li>
+          <li><a href="produtos.html">Sacos e Sacolas</a></li>
+        </ul>
       </div>
-    </section>
-
-    <!-- ===== DIFERENCIAIS ===== -->
-    <section class="section section-gray">
-      <div class="container">
-        <div class="section-header">
-          <div class="overline">Por que escolher a Picos Plast?</div>
-          <h2>Diferenciais que fazem a diferença</h2>
-          <p>
-            Mais de 14 anos entregando qualidade, praticidade e parceria para
-            negócios do Piauí.
-          </p>
-        </div>
-        <div class="diferenciais-grid">
-          <div class="diferencial-card animate-up">
-            <div class="icon">🚚</div>
-            <h3>Logística Própria</h3>
-            <p>
-              Frota própria para entregas rápidas e seguras em todo o estado do
-              Piauí.
-            </p>
-          </div>
-          <div class="diferencial-card animate-up">
-            <div class="icon">📦</div>
-            <h3>Estoque Completo</h3>
-            <p>
-              Mais de 12 categorias e centenas de produtos prontos para
-              pronta-entrega.
-            </p>
-          </div>
-          <div class="diferencial-card animate-up">
-            <div class="icon">🤝</div>
-            <h3>Atendimento B2B</h3>
-            <p>
-              Equipe especializada no atendimento a empresas de todos os portes.
-            </p>
-          </div>
-          <div class="diferencial-card animate-up">
-            <div class="icon">♻️</div>
-            <h3>Compromisso Ambiental</h3>
-            <p>
-              Reciclagem de plásticos e papelões transformados em novos
-              produtos.
-            </p>
-          </div>
-        </div>
+      <div>
+        <h4>Contato</h4>
+        <ul class="footer-contact">
+          <li><span class="icon">📞</span><div><div>(89) 2101-0100</div><div>(89) 9973-3789</div></div></li>
+          <li><span class="icon">✉️</span><div>picos-plast@gmail.com</div></li>
+          <li><span class="icon">📍</span><div>Rua Santo Antônio, 136<br/>Centro, Picos - PI</div></li>
+        </ul>
       </div>
-    </section>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Picos Plast. Todos os direitos reservados.</span>
+      <span>Desenvolvido por Alan Santos</span>
+      <span>Picos - PI | (89) 2101-0100</span>
+    </div>
+  </div>
+</footer>
 
-    <!-- ===== SEGMENTOS ===== -->
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <div class="overline">Quem atendemos</div>
-          <h2>Soluções para cada segmento</h2>
-          <p>
-            Seja qual for o seu negócio de alimentação, temos as embalagens
-            certas para você.
-          </p>
-        </div>
-        <div class="segmentos-row">
-          <div class="segmento-tag">🥐 Padarias e Confeitarias</div>
-          <div class="segmento-tag">🍦 Sorveteiros</div>
-          <div class="segmento-tag">🍕 Pizzarias</div>
-          <div class="segmento-tag">🍽️ Restaurantes</div>
-          <div class="segmento-tag">🥩 Frigoríficos</div>
-          <div class="segmento-tag">🛒 Supermercados</div>
-          <div class="segmento-tag">🎉 Festas e Eventos</div>
-          <div class="segmento-tag">🍔 Fast Food</div>
-        </div>
-      </div>
-    </section>
+<a href="https://wa.me/5589997337890?text=Olá!%20Quero%20fazer%20um%20pedido." target="_blank" class="wa-float" aria-label="WhatsApp">
+  <i class="ph-fill ph-whatsapp-logo"></i>
+</a>
 
-    <!-- ===== PRODUTOS DESTAQUE ===== -->
-    <section class="section section-gray">
-      <div class="container">
-        <div class="section-header">
-          <div class="overline">Nosso Catálogo</div>
-          <h2>Produtos para todos os segmentos</h2>
-          <p>
-            12 categorias completas com produtos de qualidade para o seu negócio
-            crescer.
-          </p>
-        </div>
-        <div class="produtos-grid">
-          <a href="produtos.html" class="produto-card">
-            <div class="emoji">🥡</div>
-            <h3>Descartáveis</h3>
-            <p>
-              Copos, pratos, bandejas, embalagens para delivery e fast food.
-            </p>
-            <span class="arrow">Ver produtos →</span>
-          </a>
-          <a href="produtos.html" class="produto-card">
-            <div class="emoji">🎂</div>
-            <h3>Confeitaria e Panificação</h3>
-            <p>
-              Embalagens para bolos, tortas, pães e produtos de confeitaria.
-            </p>
-            <span class="arrow">Ver produtos →</span>
-          </a>
-          <a href="produtos.html" class="produto-card">
-            <div class="emoji">🍦</div>
-            <h3>Sorveteria</h3>
-            <p>Potes, copinhos, palitos e embalagens para sorvetes e açaí.</p>
-            <span class="arrow">Ver produtos →</span>
-          </a>
-          <a href="produtos.html" class="produto-card">
-            <div class="emoji">❄️</div>
-            <h3>Caixas Térmicas</h3>
-            <p>
-              Caixas de isopor e soluções térmicas para conservação de
-              alimentos.
-            </p>
-            <span class="arrow">Ver produtos →</span>
-          </a>
-          <a href="produtos.html" class="produto-card">
-            <div class="emoji">🛍️</div>
-            <h3>Sacos e Sacolas</h3>
-            <p>Sacolas plásticas, sacos para lixo e embalagens flexíveis.</p>
-            <span class="arrow">Ver produtos →</span>
-          </a>
-          <a href="produtos.html" class="produto-card">
-            <div class="emoji">🎉</div>
-            <h3>Festas e Eventos</h3>
-            <p>
-              Descartáveis especiais, acrílicos e itens para eventos e festas.
-            </p>
-            <span class="arrow">Ver produtos →</span>
-          </a>
-        </div>
-        <div style="text-align: center; margin-top: 40px">
-          <a href="produtos.html" class="btn btn-blue"
-            >Ver todos os produtos →</a
-          >
-        </div>
-      </div>
-    </section>
+<script>
+(function () {
+  'use strict';
 
-    <!-- ===== COBERTURA ===== -->
-    <section class="section section-dark">
-      <div class="container">
-        <div class="cobertura-wrap">
-          <div class="cobertura-map">
-            <div>
-              <div
-                style="font-size: 5rem; text-align: center; margin-bottom: 16px"
-              >
-                🗺️
-              </div>
-              <p
-                style="
-                  text-align: center;
-                  color: rgba(255, 255, 255, 0.6);
-                  font-size: 0.9rem;
-                "
-              >
-                Cobertura em todo o Piauí
-              </p>
-            </div>
-          </div>
-          <div class="cobertura-text">
-            <div
-              class="overline"
-              style="
-                color: var(--red);
-                font-size: 0.75rem;
-                font-weight: 700;
-                letter-spacing: 2px;
-                text-transform: uppercase;
-                margin-bottom: 12px;
-              "
-            >
-              Atendemos todo o Piauí
-            </div>
-            <h2>Sua região também é <span>nossa região</span></h2>
-            <p>
-              Com frota própria e logística estruturada, a Picos Plast entrega
-              em dezenas de cidades do Piauí, garantindo agilidade e confiança
-              para o seu negócio.
-            </p>
-            <div class="cidades-grid">
-              <div class="cidade-tag">📍 Picos</div>
-              <div class="cidade-tag">📍 Floriano</div>
-              <div class="cidade-tag">📍 Oeiras</div>
-              <div class="cidade-tag">📍 Patos</div>
-              <div class="cidade-tag">📍 Jaicós</div>
-              <div class="cidade-tag">📍 Fronteiras</div>
-              <div class="cidade-tag">📍 Pio IX</div>
-              <div class="cidade-tag">📍 Wall Ferraz</div>
-              <div class="cidade-tag">📍 + 40 cidades</div>
-            </div>
-            <a href="contato.html" class="btn btn-primary"
-              >📦 Solicitar entrega na minha cidade</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
+  /* ---- Navbar scroll ---- */
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+  }, { passive: true });
 
-    <!-- ===== VÍDEO INSTITUCIONAL ===== -->
-    <section class="section section-gray">
-      <div class="container">
-        <div class="section-header">
-          <div class="overline">Conheça a Picos Plast</div>
-          <h2>Vídeo Institucional</h2>
-          <p>
-            Veja como trabalhamos e por que somos a distribuidora de referência
-            no Piauí.
-          </p>
-        </div>
-        <div style="max-width: 860px; margin: 0 auto">
-          <div
-            style="
-              position: relative;
-              padding-top: 56.25%;
-              border-radius: 12px;
-              overflow: hidden;
-              box-shadow: 0 12px 48px rgba(13, 27, 62, 0.18);
-            "
-          >
-            <video
-              controls
-              preload="metadata"
-              poster=""
-              style="
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                background: #0d1b3e;
-              "
-              aria-label="Vídeo Institucional Picos Plast"
-            >
-              <source src="assets/videos/video_institucional.mp4" type="video/mp4" />
-              Seu navegador não suporta reprodução de vídeo.
-            </video>
-          </div>
-          <div
-            style="
-              display: flex;
-              gap: 32px;
-              justify-content: center;
-              margin-top: 32px;
-              flex-wrap: wrap;
-            "
-          >
-            <div style="text-align: center">
-              <div
-                style="font-size: 2rem; font-weight: 800; color: var(--navy)"
-              >
-                +14 <span style="color: var(--red)">anos</span>
-              </div>
-              <div
-                style="
-                  font-size: 0.85rem;
-                  color: var(--gray-text);
-                  margin-top: 4px;
-                "
-              >
-                de mercado
-              </div>
-            </div>
-            <div style="text-align: center">
-              <div
-                style="font-size: 2rem; font-weight: 800; color: var(--navy)"
-              >
-                50<span style="color: var(--red)">+</span>
-              </div>
-              <div
-                style="
-                  font-size: 0.85rem;
-                  color: var(--gray-text);
-                  margin-top: 4px;
-                "
-              >
-                cidades atendidas
-              </div>
-            </div>
-            <div style="text-align: center">
-              <div
-                style="font-size: 2rem; font-weight: 800; color: var(--navy)"
-              >
-                12<span style="color: var(--red)">+</span>
-              </div>
-              <div
-                style="
-                  font-size: 0.85rem;
-                  color: var(--gray-text);
-                  margin-top: 4px;
-                "
-              >
-                categorias de produtos
-              </div>
-            </div>
-            <div style="text-align: center">
-              <div
-                style="font-size: 2rem; font-weight: 800; color: var(--navy)"
-              >
-                4 <span style="color: var(--red)">lojas</span>
-              </div>
-              <div
-                style="
-                  font-size: 0.85rem;
-                  color: var(--gray-text);
-                  margin-top: 4px;
-                "
-              >
-                + 1 centro de distribuição
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  /* ---- Mobile menu ---- */
+  document.getElementById('navToggle').addEventListener('click', () => {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
 
-    <!-- ===== MARCAS PARCEIRAS ===== -->
-    <section class="section section-gray">
-      <div class="container">
-        <div
-          class="section-header"
-          style="text-align: center; margin-bottom: 32px"
-        >
-          <div class="overline">Trabalhamos com as melhores marcas</div>
-          <h2
-            style="
-              font-size: clamp(1.6rem, 4vw, 2.2rem);
-              font-weight: 800;
-              color: var(--navy);
-            "
-          >
-            Marcas que <span style="color: var(--red)">vendemos</span>
-          </h2>
-        </div>
-        <div class="brands-carousel">
-          <button class="brands-btn" id="brandsPrev" aria-label="Anterior">
-            &#8249;
-          </button>
-          <div class="brands-viewport" id="brandsViewport">
-            <div class="brands-track" id="brandsTrack">
-              <div class="brand-item">
-                <a href="https://www.alispec.com.br/" target="_blank"
-                  ><img src="assets/images/clientes/alispec.png" alt="Alispec" /></a
-                ><span>Alispec Confeitaria e Panificação</span>
-              </div>
-              <div class="brand-item">
-                <a href="https://arcolor.com.br/" target="_blank"
-                  ><img src="assets/images/clientes/arcolor_confeitaria.png" alt="Arcolor" /></a
-                ><span>Arcolor Confeitaria e Panificação</span>
-              </div>
-              <div class="brand-item">
-                <a href="https://bomsabor.com.br/" target="_blank"
-                  ><img src="assets/images/clientes/bom_sabor_alimentos.png" alt="Bom Sabor" /></a
-                ><span>Bom Sabor Alimentos</span>
-              </div>
-              <div class="brand-item">
-                <a href="https://cacaufoods.com.br/" target="_blank"
-                  ><img src="assets/images/clientes/cacal_food.png" alt="Cacal Food" /></a
-                ><span>Cacal Foods Confeitaria</span>
-              </div>
-              <div class="brand-item">
-                <a href="https://www.drfi.com/" target="_blank"
-                  ><img src="assets/images/clientes/grupo_duas_rodas.png" alt="Grupo Duas Rodas" /></a
-                ><span>Grupo Duas Rodas</span>
-              </div>
-              <div class="brand-item">
-                <a href="https://ultradescartaveis.com.br/" target="_blank"
-                  ><img src="assets/images/clientes/grupo_ultra.png" alt="Grupo Ultra" /></a
-                ><span>Grupo Ultra Descartáveis</span>
-              </div>
-              <div class="brand-item">
-                <a href="https://hulala.com.br/" target="_blank"
-                  ><img src="assets/images/clientes/hulala_cremes.png" alt="Hulalá" /></a
-                ><span>Hulalá Cremes e Chantilly</span>
-              </div>
-              <div class="brand-item">
-                <a href="https://jazamalimentos.com.br/" target="_blank"
-                  ><img src="assets/images/clientes/jazam_alimentos.png" alt="Jazam" /></a
-                ><span>Jazam Alimentos Confeitaria</span>
-              </div>
-              <div class="brand-item">
-                <a href="https://polipor.com.br/" target="_blank"
-                  ><img src="assets/images/clientes/polipor.png" alt="Polipor" /></a
-                ><span>Polipor Soluções em Isopor</span>
-              </div>
-              <div class="brand-item">
-                <a href="https://www.totalplast.com.br/" target="_blank"
-                  ><img src="assets/images/clientes/total_plast.png" alt="Total Plast" /></a
-                ><span>Total Plast Descartáveis</span>
-              </div>
-              <!-- duplicado para loop contínuo -->
-              <div class="brand-item">
-                <a href="https://www.alispec.com.br/" target="_blank"
-                  ><img src="assets/images/clientes/alispec.png" alt="Alispec" /></a
-                ><span>Alispec Confeitaria e Panificação</span>
-              </div>
-              <div class="brand-item">
-                <a href="https://arcolor.com.br/" target="_blank"
-                  ><img src="assets/images/clientes/arcolor_confeitaria.png" alt="Arcolor" /></a
-                ><span>Arcolor Confeitaria e Panificação</span>
-              </div>
-              <div class="brand-item">
-                <a href="https://bomsabor.com.br/" target="_blank"
-                  ><img src="assets/images/clientes/bom_sabor_alimentos.png" alt="Bom Sabor" /></a
-                ><span>Bom Sabor Alimentos</span>
-              </div>
-              <div class="brand-item">
-                <a href="https://cacaufoods.com.br/" target="_blank"
-                  ><img src="assets/images/clientes/cacal_food.png" alt="Cacal Food" /></a
-                ><span>Cacal Foods Confeitaria</span>
-              </div>
-              <div class="brand-item">
-                <a href="https://www.drfi.com/" target="_blank"
-                  ><img src="assets/images/clientes/grupo_duas_rodas.png" alt="Grupo Duas Rodas" /></a
-                ><span>Grupo Duas Rodas</span>
-              </div>
-              <div class="brand-item">
-                <a href="https://ultradescartaveis.com.br/" target="_blank"
-                  ><img src="assets/images/clientes/grupo_ultra.png" alt="Grupo Ultra" /></a
-                ><span>Grupo Ultra Descartáveis</span>
-              </div>
-              <div class="brand-item">
-                <a href="https://hulala.com.br/" target="_blank"
-                  ><img src="assets/images/clientes/hulala_cremes.png" alt="Hulalá" /></a
-                ><span>Hulalá Cremes e Chantilly</span>
-              </div>
-              <div class="brand-item">
-                <a href="https://jazamalimentos.com.br/" target="_blank"
-                  ><img src="assets/images/clientes/jazam_alimentos.png" alt="Jazam" /></a
-                ><span>Jazam Alimentos Confeitaria</span>
-              </div>
-              <div class="brand-item">
-                <a href="https://polipor.com.br/" target="_blank"
-                  ><img src="assets/images/clientes/polipor.png" alt="Polipor" /></a
-                ><span>Polipor Soluções em Isopor</span>
-              </div>
-              <div class="brand-item">
-                <a href="https://www.totalplast.com.br/" target="_blank"
-                  ><img src="assets/images/clientes/total_plast.png" alt="Total Plast" /></a
-                ><span>Total Plast Descartáveis</span>
-              </div>
-            </div>
-          </div>
-          <button class="brands-btn" id="brandsNext" aria-label="Próximo">
-            &#8250;
-          </button>
-        </div>
-        <script>
-          (function () {
-            const track = document.getElementById('brandsTrack');
-            const viewport = document.getElementById('brandsViewport');
-            // scroll contínuo via JS para permitir controle manual
-            let pos = 0;
-            let paused = false;
-            let speed = 1.2; // px por frame
-            function half() {
-              return track.scrollWidth / 2;
-            }
-            function step() {
-              if (!paused) {
-                pos += speed;
-                if (pos >= half()) pos = 0;
-                track.style.transform = 'translateX(-' + pos + 'px)';
-              }
-              requestAnimationFrame(step);
-            }
-            requestAnimationFrame(step);
-            function skip(dir) {
-              paused = true;
-              pos += dir * 232; // largura item + gap
-              if (pos < 0) pos = half() + pos;
-              if (pos >= half()) pos -= half();
-              track.style.transform = 'translateX(-' + pos + 'px)';
-              setTimeout(() => (paused = false), 800);
-            }
-            document
-              .getElementById('brandsNext')
-              .addEventListener('click', () => skip(1));
-            document
-              .getElementById('brandsPrev')
-              .addEventListener('click', () => skip(-1));
-            viewport.addEventListener('mouseenter', () => (paused = true));
-            viewport.addEventListener('mouseleave', () => (paused = false));
-          })();
-        </script>
-      </div>
-    </section>
-
-    <!-- ===== CTA WHATSAPP ===== -->
-    <section class="section">
-      <div class="container">
-        <div class="cta-banner">
-          <div>
-            <h2>Pronto para fazer seu pedido?</h2>
-            <p>
-              Fale diretamente com nossa equipe pelo WhatsApp. Atendimento
-              rápido e personalizado.
-            </p>
-          </div>
-          <a
-            href="https://wa.me/5589997337890?text=Olá!%20Quero%20fazer%20um%20pedido."
-            target="_blank"
-            class="btn btn-white btn-lg"
-          >
-            <i class="ph-fill ph-whatsapp-logo"></i> Chamar no WhatsApp agora
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== FOOTER ===== -->
-    <footer>
-      <div class="container">
-        <div class="footer-grid">
-          <div class="footer-brand">
-            <div class="footer-logo">
-              <img
-                src="assets/images/logo.png"
-                alt="Picos Plast"
-                style="height: 44px; width: auto; object-fit: contain"
-              />
-            </div>
-            <p>
-              Distribuidora referência em embalagens descartáveis e materiais
-              plásticos para todo o Piauí desde 2011.
-            </p>
-            <div class="footer-social">
-              <a
-                href="https://instagram.com/picosplast"
-                target="_blank"
-                aria-label="Instagram"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="1.8rem"
-                  height="1.8rem"
-                  viewBox="0 0 24 24"
-                >
-                  <defs>
-                    <radialGradient id="ig" cx="30%" cy="107%" r="150%">
-                      <stop offset="0%" stop-color="#fdf497" />
-                      <stop offset="5%" stop-color="#fdf497" />
-                      <stop offset="45%" stop-color="#fd5949" />
-                      <stop offset="60%" stop-color="#d6249f" />
-                      <stop offset="90%" stop-color="#285AEB" />
-                    </radialGradient>
-                  </defs>
-                  <path
-                    fill="url(#ig)"
-                    d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.336 3.608 1.311.975.975 1.249 2.242 1.311 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.336 2.633-1.311 3.608-.975.975-2.242 1.249-3.608 1.311-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.336-3.608-1.311-.975-.975-1.249-2.242-1.311-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.336-2.633 1.311-3.608.975-.975 2.242-1.249 3.608-1.311C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.333.014 7.053.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.053.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.085 1.856.601 3.698 1.942 5.038 1.341 1.341 3.183 1.857 5.039 1.942C8.333 23.986 8.741 24 12 24s3.667-.014 4.947-.072c1.856-.085 3.698-.601 5.038-1.942 1.341-1.34 1.857-3.182 1.942-5.038.058-1.28.072-1.689.072-4.948 0-3.259-.014-3.667-.072-4.947-.085-1.856-.601-3.698-1.942-5.039C20.645.673 18.803.157 16.947.072 15.667.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"
-                  /></svg
-              ></a>
-              <a
-                href="https://linkedin.com/company/picosplast"
-                target="_blank"
-                aria-label="LinkedIn"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="1.8rem"
-                  height="1.8rem"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill="#0077b5"
-                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-                  /></svg
-              ></a>
-              <a
-                href="https://www.youtube.com/@picosplast9400"
-                target="_blank"
-                aria-label="YouTube"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="1.8rem"
-                  height="1.8rem"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill="#FF0000"
-                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
-                  /></svg
-              ></a>
-            </div>
-          </div>
-          <div>
-            <h4>Navegação</h4>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="produtos.html">Produtos</a></li>
-              <li><a href="sobre.html">Sobre nós</a></li>
-              <li><a href="contato.html">Contato</a></li>
-              <li><a href="trabalhe.html">Trabalhe Conosco</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4>Produtos</h4>
-            <ul>
-              <li><a href="produtos.html">Descartáveis</a></li>
-              <li><a href="produtos.html">Confeitaria</a></li>
-              <li><a href="produtos.html">Sorveteria</a></li>
-              <li><a href="produtos.html">Caixas Térmicas</a></li>
-              <li><a href="produtos.html">Sacos e Sacolas</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4>Contato</h4>
-            <ul class="footer-contact">
-              <li>
-                <span class="icon">📞</span>
-                <div>
-                  <div>(89) 2101-0100</div>
-                  <div>(89) 9973-3789</div>
-                </div>
-              </li>
-              <li>
-                <span class="icon">✉️</span>
-                <div>picos-plast@gmail.com</div>
-              </li>
-              <li>
-                <span class="icon">📍</span>
-                <div>Rua Santo Antônio, 136<br />Centro, Picos - PI</div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <span>© 2026 Picos Plast. Todos os direitos reservados.</span>
-          <span>Desenvolvido por Alan Santos</span>
-          <span>CNPJ: Picos - PI | (89) 2101-0100</span>
-        </div>
-      </div>
-    </footer>
-
-    <!-- ===== WhatsApp Float ===== -->
-    <a
-      href="https://wa.me/5589997337890?text=Olá!%20Quero%20fazer%20um%20pedido."
-      target="_blank"
-      class="wa-float"
-      aria-label="WhatsApp"
-      ><i class="ph-fill ph-whatsapp-logo"></i
-    ></a>
-
-    <script>
-      // Navbar scroll effect
-      const navbar = document.getElementById('navbar');
-      window.addEventListener('scroll', () => {
-        navbar.classList.toggle('scrolled', window.scrollY > 40);
-      });
-
-      // Mobile menu
-      const toggle = document.getElementById('navToggle');
-      const links = document.getElementById('navLinks');
-      toggle.addEventListener('click', () => {
-        links.classList.toggle('open');
-      });
-
-      // Scroll animations
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((e) => {
-            if (e.isIntersecting) {
-              e.target.classList.add('visible');
-              observer.unobserve(e.target);
-            }
-          });
-        },
-        { threshold: 0.15 },
-      );
-      document
-        .querySelectorAll('.animate-up')
-        .forEach((el) => observer.observe(el));
-
-      // Counter animation on stats
-      function animateCounter(el, target, suffix) {
-        if (!el) return;
-        let n = 0,
-          step = Math.ceil(target / 40);
-        const t = setInterval(() => {
-          n = Math.min(n + step, target);
-          el.textContent = n + suffix;
-          if (n >= target) clearInterval(t);
-        }, 40);
+  /* ---- Scroll reveal ---- */
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        revealObserver.unobserve(e.target);
       }
-      const statsObserver = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((e) => {
-            if (!e.isIntersecting) return;
-            animateCounter(
-              document.querySelector('.hero-stat:nth-child(1) .num'),
-              14,
-              '+ anos',
-            );
-            animateCounter(
-              document.querySelector('.hero-stat:nth-child(2) .num'),
-              12,
-              '+',
-            );
-            animateCounter(
-              document.querySelector('.hero-stat:nth-child(3) .num'),
-              50,
-              '+',
-            );
-            statsObserver.disconnect();
-          });
-        },
-        { threshold: 0.5 },
-      );
-      const statsEl = document.querySelector('.hero-stats');
-      if (statsEl) statsObserver.observe(statsEl);
-    </script>
-  </body>
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.reveal, .animate-up').forEach((el) => revealObserver.observe(el));
+
+  /* ---- Parallax leve no hero ---- */
+  const hero = document.getElementById('hero');
+  const heroBg = hero.querySelector('.hero-bg');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY < window.innerHeight) {
+      heroBg.style.transform = 'translateY(' + (window.scrollY * 0.25) + 'px)';
+    }
+  }, { passive: true });
+
+  /* ---- Magnetic hover nos botões ---- */
+  document.querySelectorAll('.btn-primary, .btn-blue, .btn-whatsapp').forEach((btn) => {
+    btn.addEventListener('mousemove', (e) => {
+      const rect = btn.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+      btn.style.transform = `translateY(-2px) translate(${x * 0.06}px, ${y * 0.06}px)`;
+    });
+    btn.addEventListener('mouseleave', () => {
+      btn.style.transform = '';
+    });
+  });
+
+  /* ---- Brands carousel ---- */
+  const track = document.getElementById('brandsTrack');
+  const viewport = document.getElementById('brandsViewport');
+  let pos = 0, paused = false;
+  function half() { return track.scrollWidth / 2; }
+  function step() {
+    if (!paused) { pos += 1; if (pos >= half()) pos = 0; track.style.transform = 'translateX(-' + pos + 'px)'; }
+    requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+  function skip(dir) {
+    paused = true;
+    pos += dir * 194;
+    if (pos < 0) pos = half() + pos;
+    if (pos >= half()) pos -= half();
+    track.style.transform = 'translateX(-' + pos + 'px)';
+    setTimeout(() => { paused = false; }, 500);
+  }
+  document.getElementById('brandsNext').addEventListener('click', () => skip(1));
+  document.getElementById('brandsPrev').addEventListener('click', () => skip(-1));
+  viewport.addEventListener('mouseenter', () => { paused = true; });
+  viewport.addEventListener('mouseleave', () => { paused = false; });
+
+  /* ---- Cursor glow (desktop only) ---- */
+  if (window.innerWidth > 768 && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const glow = document.createElement('div');
+    glow.style.cssText = 'position:fixed;width:500px;height:500px;border-radius:50%;pointer-events:none;z-index:0;background:radial-gradient(circle,rgba(37,99,235,.06) 0%,transparent 70%);transform:translate(-50%,-50%);transition:left .8s ease,top .8s ease;left:-50%;top:-50%';
+    document.body.appendChild(glow);
+    document.addEventListener('mousemove', (e) => {
+      glow.style.left = e.clientX + 'px';
+      glow.style.top = e.clientY + 'px';
+    }, { passive: true });
+  }
+})();
+</script>
+</body>
 </html>
