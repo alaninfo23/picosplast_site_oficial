@@ -705,27 +705,21 @@ button { font-family: inherit; }
 .diferenciais-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
 
 .diferencial-card {
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: #fff;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
   border-radius: var(--r-xl);
   padding: 32px 24px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--border);
   transition: all var(--t-base);
   position: relative;
   overflow: hidden;
-  box-shadow: 
-    0 4px 6px -1px rgba(0, 0, 0, 0.02),
-    0 2px 4px -2px rgba(0, 0, 0, 0.02),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+  box-shadow: var(--shadow-sm);
 }
 .diferencial-card:hover {
-  box-shadow: 
-    0 20px 25px -5px rgba(0, 0, 0, 0.05),
-    0 8px 10px -6px rgba(0, 0, 0, 0.05),
-    inset 0 0 0 1px rgba(31, 24, 153, 0.1);
+  box-shadow: var(--shadow-lg);
   transform: translateY(-6px);
-  border-color: rgba(31, 24, 153, 0.1);
+  border-color: rgba(31,24,153,.18);
 }
 
 .diferencial-card .icon {
@@ -778,12 +772,12 @@ button { font-family: inherit; }
 .produtos-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 
 .produto-card {
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: #fff;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
   border-radius: var(--r-xl);
   padding: 28px 24px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--border);
   cursor: pointer;
   transition: all var(--t-base);
   text-decoration: none;
@@ -792,16 +786,12 @@ button { font-family: inherit; }
   gap: 4px;
   position: relative;
   overflow: hidden;
-  box-shadow: 
-    0 4px 6px -1px rgba(0, 0, 0, 0.02),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+  box-shadow: var(--shadow-sm);
 }
 .produto-card:hover {
-  box-shadow: 
-    0 20px 25px -5px rgba(0, 0, 0, 0.05),
-    inset 0 0 0 1px rgba(31, 24, 153, 0.05);
-  border-color: rgba(31, 24, 153, 0.1);
-  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(31,24,153,.18);
+  transform: translateY(-6px);
 }
 .produto-card .emoji { font-size: 2.4rem; margin-bottom: 12px; display: block; transition: transform var(--t-base); }
 .produto-card:hover .emoji { transform: scale(1.1) rotate(5deg); }
@@ -856,7 +846,7 @@ button { font-family: inherit; }
    CTA BANNER PREMIUM
 ============================================= */
 .cta-banner {
-  background: linear-gradient(135deg, var(--red-dim) 0%, #7f1d1d 100%);
+  background: linear-gradient(135deg, var(--red) 0%, var(--red-dim) 60%, #a71010 100%);
   border-radius: var(--r-xl);
   padding: 60px 60px;
   display: flex; align-items: center; justify-content: space-between; gap: 40px;
@@ -1532,4 +1522,206 @@ footer ul li a:hover { color: rgba(255,255,255,.85); }
   .sobre-numbers { grid-template-columns: 1fr 1fr; }
   .cta-banner { padding: 36px 24px; }
   .catalogo-cta { padding: 40px 24px; }
+}
+
+/* =============================================
+   MELHORIAS VISUAIS — EFEITOS DE ALTO IMPACTO
+============================================= */
+
+/* --- Hero cards: brilho e borda ao hover --- */
+.hero-card {
+  box-shadow: 0 4px 20px rgba(0,0,0,.3);
+}
+.hero-card:hover {
+  border-color: rgba(255,255,255,.22);
+  box-shadow: 0 12px 40px rgba(0,0,0,.5), 0 0 0 1px rgba(255,255,255,.1), inset 0 1px 0 rgba(255,255,255,.08);
+  transform: translateY(-4px) scale(1.01);
+}
+/* Linha de brilho no topo de cada card ao hover */
+.hero-card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 10%; right: 10%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.35), transparent);
+  opacity: 0;
+  transition: opacity var(--t-base);
+  z-index: 3;
+}
+.hero-card:hover::after { opacity: 1; }
+
+/* --- Diferencial cards: borda glowing ao hover --- */
+.diferencial-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  opacity: 0;
+  background: linear-gradient(135deg, rgba(31,24,153,.05), rgba(229,57,53,.03));
+  transition: opacity var(--t-base);
+  pointer-events: none;
+}
+.diferencial-card:hover::before { opacity: 1; }
+.diferencial-card:hover {
+  box-shadow:
+    0 20px 40px rgba(0,0,0,.07),
+    0 0 0 1px rgba(31,24,153,.12),
+    inset 0 1px 0 rgba(255,255,255,.8);
+}
+
+/* --- Produto cards: shimmer no hover --- */
+.produto-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.12), transparent);
+  transform: skewX(-20deg);
+  transition: left 0.5s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+.produto-card:hover::before { left: 150%; }
+
+/* --- Segmento tags: ícone animado ao hover --- */
+.segmento-tag {
+  transition: all var(--t-base);
+}
+.segmento-tag:hover {
+  background: linear-gradient(135deg, var(--navy), var(--navy-2));
+  box-shadow: var(--shadow-md), 0 0 16px rgba(31,24,153,.25);
+  letter-spacing: .01em;
+}
+
+/* --- CTA Banner: glow mais forte no botão --- */
+.cta-banner .btn-white:hover {
+  box-shadow: var(--shadow-xl), 0 0 0 4px rgba(255,255,255,.15);
+  transform: translateY(-3px) scale(1.01);
+}
+
+/* --- Brands: glow azul ao hover --- */
+.brand-item:hover {
+  box-shadow: var(--shadow-md), 0 0 0 1px rgba(31,24,153,.1);
+  transform: translateY(-2px);
+}
+
+/* --- Scroll reveal mais suave --- */
+.reveal {
+  transition: opacity .75s cubic-bezier(.16,1,.3,1), transform .75s cubic-bezier(.16,1,.3,1);
+}
+
+/* --- Seção de números no sobre: barra de cor no hover animada --- */
+.numero-card::before {
+  transition: opacity var(--t-base), transform var(--t-base);
+  transform: scaleX(0.4);
+}
+.numero-card:hover::before {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+/* --- Navbar: glow no link ativo mais vivo --- */
+.nav-links a.active::after {
+  box-shadow: 0 0 12px var(--red), 0 0 24px rgba(229,57,53,.4);
+}
+
+/* --- Hero visual: glow mais intenso --- */
+.hero-visual::before {
+  background: radial-gradient(ellipse at center, rgba(31,24,153,.3) 0%, rgba(229,57,53,.05) 50%, transparent 70%);
+  filter: blur(32px);
+  animation: orbFloat 10s ease-in-out infinite;
+}
+
+/* --- Floating cards animações alternadas --- */
+.hero-grid .hero-card:nth-child(odd)  { animation: heroFloat 6s ease-in-out infinite; }
+.hero-grid .hero-card:nth-child(even) { animation: heroFloat 7s ease-in-out infinite reverse; }
+.hero-grid .hero-card:hover { animation-play-state: paused; }
+
+@keyframes heroFloat {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-8px); }
+}
+
+/* --- Badge do hero: animação de entrada --- */
+.hero-text .badge {
+  animation: badgeIn .6s .1s cubic-bezier(.34,1.56,.64,1) both;
+}
+@keyframes badgeIn {
+  from { opacity: 0; transform: translateY(-8px) scale(.95); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* --- Títulos hero: entrada mais impactante --- */
+.hero-text h1 {
+  animation: titleIn .8s .2s cubic-bezier(.16,1,.3,1) both;
+}
+@keyframes titleIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.hero-text > p {
+  animation: titleIn .8s .35s cubic-bezier(.16,1,.3,1) both;
+}
+.hero-btns {
+  animation: titleIn .8s .45s cubic-bezier(.16,1,.3,1) both;
+}
+.hero-stats {
+  animation: titleIn .8s .55s cubic-bezier(.16,1,.3,1) both;
+}
+
+/* --- Hero visual: entrada da direita --- */
+.hero-visual {
+  animation: heroVisualIn 1s .3s cubic-bezier(.16,1,.3,1) both;
+}
+@keyframes heroVisualIn {
+  from { opacity: 0; transform: translateX(40px) scale(.96); }
+  to   { opacity: 1; transform: translateX(0) scale(1); }
+}
+
+/* --- Produto card arrow animada --- */
+.produto-card .arrow {
+  transition: gap var(--t-base), color var(--t-base);
+}
+.produto-card:hover .arrow {
+  gap: 8px;
+  color: var(--red);
+}
+
+/* --- Footer links: underline animado --- */
+footer ul li a {
+  position: relative;
+}
+footer ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: -1px; left: 0;
+  width: 0; height: 1px;
+  background: rgba(255,255,255,.4);
+  transition: width var(--t-base);
+}
+footer ul li a:hover::after { width: 100%; }
+
+/* --- WA float: tooltip --- */
+.wa-float::before {
+  content: 'Fazer pedido';
+  position: absolute;
+  right: calc(100% + 12px);
+  top: 50%; transform: translateY(-50%);
+  background: rgba(4,8,18,.9);
+  color: #fff;
+  font-size: .72rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: var(--r-full);
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--t-base), transform var(--t-base);
+  transform: translateY(-50%) translateX(4px);
+  border: 1px solid rgba(255,255,255,.06);
+}
+.wa-float:hover::before {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
 }
