@@ -1892,3 +1892,36 @@ footer ul li a:hover::after { width: 100%; }
   border: 1px solid #fca5a5;
 }
 @keyframes spin { to { transform: rotate(360deg); } }
+
+/* ── Candidatura card (trabalhe.html) ──────────────────────────── */
+.candidatura-card {
+  background: var(--surface-2, #f8f9fa);
+  border: 1px solid var(--border, #e5e7eb);
+  border-radius: 16px;
+  padding: 40px 36px;
+  text-align: center;
+}
+.candidatura-icon {
+  font-size: 3rem;
+  color: var(--primary, #0ea5e9);
+  margin-bottom: 16px;
+}
+.candidatura-lista {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+  max-width: 320px;
+  margin-inline: auto;
+}
+.candidatura-lista li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--text-sm, .9rem);
+  color: var(--text-2, #374151);
+}
+.candidatura-lista i { color: var(--primary, #0ea5e9); font-size: 1.1rem; }
