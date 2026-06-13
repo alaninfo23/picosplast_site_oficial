@@ -31,11 +31,14 @@
           <li><a href="sobre.html">Sobre</a></li>
           <li><a href="contato.html">Contato</a></li>
           <li><a href="trabalhe.html" class="active">Trabalhe Conosco</a></li>
-          <li>
-            <a href="https://drive.google.com/file/d/12jltAWs258PlwSHk5lYboxj0jJnEserR/view" target="_blank" class="nav-cta">📋 Catálogo Embalagens</a>
-          </li>
-          <li>
-            <a href="https://drive.google.com/file/d/1s4vKlvBD6QZzIEH_XVZ_IaxZGR6bDhvY/view" target="_blank" class="nav-cta nav-cta--alt">🏠 Catálogo Utilidades</a>
+          <li class="nav-dropdown">
+            <button class="nav-cta nav-dropdown-toggle" aria-expanded="false">
+              📋 Catálogos <i class="ph-bold ph-caret-down nav-caret"></i>
+            </button>
+            <ul class="nav-dropdown-menu">
+              <li><a href="https://drive.google.com/file/d/12jltAWs258PlwSHk5lYboxj0jJnEserR/view" target="_blank">📋 Embalagens</a></li>
+              <li><a href="https://drive.google.com/file/d/1s4vKlvBD6QZzIEH_XVZ_IaxZGR6bDhvY/view" target="_blank">🏠 Utilidades</a></li>
+            </ul>
           </li>
         </ul>
         <button class="nav-toggle" id="navToggle" aria-label="Menu">
@@ -255,5 +258,23 @@
 
       /* Magnetic buttons */
     </script>
-  </body>
+  
+<script>
+  /* Dropdown catálogos */
+  document.querySelectorAll('.nav-dropdown-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var li = btn.closest('.nav-dropdown');
+      var open = li.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+  });
+  document.addEventListener('click', function() {
+    document.querySelectorAll('.nav-dropdown.open').forEach(function(li) {
+      li.classList.remove('open');
+      li.querySelector('.nav-dropdown-toggle').setAttribute('aria-expanded', 'false');
+    });
+  });
+</script>
+</body>
 </html>
