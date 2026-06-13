@@ -1871,3 +1871,24 @@ footer ul li a:hover::after { width: 100%; }
   position: relative;
   z-index: 1;
 }
+
+/* ── Form feedback (trabalhe.html) ─────────────────────────────── */
+.form-feedback {
+  padding: 16px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: var(--text-sm, .9rem);
+  display: none;
+}
+.form-feedback:not(:empty) { display: block; }
+.form-feedback--success {
+  background: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #6ee7b7;
+}
+.form-feedback--error {
+  background: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fca5a5;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
