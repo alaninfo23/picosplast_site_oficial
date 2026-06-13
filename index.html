@@ -68,10 +68,16 @@
           própria e entrega rápida.
         </p>
         <div class="hero-btns">
-          <a href="https://wa.me/5589997337890?text=Olá!%20Quero%20fazer%20um%20pedido."
-            target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
-            <i class="ph-fill ph-whatsapp-logo"></i> Falar no WhatsApp
-          </a>
+          <div class="wa-menu-container">
+            <div class="wa-float-menu" id="heroWaMenu" hidden>
+              <a href="https://api.whatsapp.com/send/?phone=5589999836120&text&type=phone_number&app_absent=0" target="_blank" rel="noopener" class="wa-float-option"><i class="ph-fill ph-whatsapp-logo"></i> Picos Plast Centro</a>
+              <a href="https://api.whatsapp.com/send/?phone=558994680892&text&type=phone_number&app_absent=0" target="_blank" rel="noopener" class="wa-float-option"><i class="ph-fill ph-whatsapp-logo"></i> Picos Plast BR</a>
+              <a href="https://api.whatsapp.com/send/?phone=5511998490742&text&type=phone_number&app_absent=0" target="_blank" rel="noopener" class="wa-float-option"><i class="ph-fill ph-whatsapp-logo"></i> Picos Plast Utilidades</a>
+            </div>
+            <button class="btn btn-whatsapp btn-lg" id="heroWaBtn" aria-label="WhatsApp" aria-expanded="false">
+              <i class="ph-fill ph-whatsapp-logo"></i> Falar no WhatsApp
+            </button>
+          </div>
           <a href="produtos.html" class="btn btn-outline btn-lg">Ver Produtos →</a>
         </div>
       </div>
@@ -122,22 +128,7 @@
           </a>
         </div>
         <div class="insta-mockup" aria-hidden="true">
-          <div class="insta-phone">
-            <div class="insta-screen">
-              <div class="insta-profile-row">
-                <div class="insta-avatar">P</div>
-                <div><strong>picosplast</strong><br><span>Picos Plast Oficial</span></div>
-              </div>
-              <div class="insta-grid">
-                <div class="insta-thumb" style="background:linear-gradient(135deg,#fd5949,#d6249f)"></div>
-                <div class="insta-thumb" style="background:linear-gradient(135deg,#285AEB,#1f1899)"></div>
-                <div class="insta-thumb" style="background:linear-gradient(135deg,#fdf497,#fd5949)"></div>
-                <div class="insta-thumb" style="background:linear-gradient(135deg,#d6249f,#285AEB)"></div>
-                <div class="insta-thumb" style="background:linear-gradient(135deg,#1f1899,#d6249f)"></div>
-                <div class="insta-thumb" style="background:linear-gradient(135deg,#fd5949,#285AEB)"></div>
-              </div>
-            </div>
-          </div>
+          <img src="assets/images/logo_pp_insta.png" alt="Instagram Picos Plast" class="insta-bio-img">
         </div>
       </div>
     </section>
@@ -983,18 +974,38 @@
 <script>
   /* WhatsApp float menu */
   (function(){
-    var btn = document.getElementById('waBtn');
-    var menu = document.getElementById('waMenu');
-    if (!btn) return;
-    btn.addEventListener('click', function(e){
-      e.stopPropagation();
-      var open = menu.hasAttribute('hidden');
-      open ? menu.removeAttribute('hidden') : menu.setAttribute('hidden','');
-      btn.setAttribute('aria-expanded', String(open));
-    });
+    function initWAMenu(btnId, menuId) {
+      var btn = document.getElementById(btnId);
+      var menu = document.getElementById(menuId);
+      if (!btn || !menu) return;
+      
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var open = menu.hasAttribute('hidden');
+        // Fecha outros menus abertos se quiser (opcional)
+        if (open) {
+          document.querySelectorAll('.wa-float-menu').forEach(function(m) {
+            m.setAttribute('hidden', '');
+          });
+          menu.removeAttribute('hidden');
+        } else {
+          menu.setAttribute('hidden', '');
+        }
+        btn.setAttribute('aria-expanded', String(open));
+      });
+    }
+
+    initWAMenu('waBtn', 'waMenu');     // Flutuante
+    initWAMenu('heroWaBtn', 'heroWaMenu'); // Hero
+
     document.addEventListener('click', function(){
-      menu.setAttribute('hidden','');
-      btn.setAttribute('aria-expanded','false');
+      document.querySelectorAll('.wa-float-menu').forEach(function(m) {
+        m.setAttribute('hidden', '');
+      });
+      var btn = document.getElementById('waBtn');
+      if(btn) btn.setAttribute('aria-expanded','false');
+      var hBtn = document.getElementById('heroWaBtn');
+      if(hBtn) hBtn.setAttribute('aria-expanded','false');
     });
   })();
 </script>

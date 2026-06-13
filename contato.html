@@ -171,7 +171,7 @@
       <div class="cidade-tag">📍 Marcolândia</div>
       <div class="cidade-tag">📍 + muitas outras</div>
     </div>
-    <a href="https://wa.me/5589997337890?text=Olá!%20Gostaria%20de%20verificar%20entrega%20na%20minha%20cidade." target="_blank" class="btn btn-primary btn-lg">
+    <a href="https://wa.me/5589997337890?text=Olá!%20Gostaria%20de%20verificar%20entrega%20na%20minha%20cidade." target="_blank" class="btn btn-whatsapp btn-lg">
       📦 Consultar entrega na minha cidade
     </a>
   </div>
@@ -231,9 +231,9 @@
 
 <div class="wa-float-wrap" id="waFloat">
   <div class="wa-float-menu" id="waMenu" hidden>
-    <a href="https://api.whatsapp.com/send/?phone=5589999836120&text&type=phone_number&app_absent=0" target="_blank" rel="noopener" class="wa-float-option"><i class="ph-fill ph-whatsapp-logo"></i> Centro</a>
-    <a href="https://api.whatsapp.com/send/?phone=558994680892&text&type=phone_number&app_absent=0" target="_blank" rel="noopener" class="wa-float-option"><i class="ph-fill ph-whatsapp-logo"></i> BR</a>
-    <a href="https://api.whatsapp.com/send/?phone=5511998490742&text&type=phone_number&app_absent=0" target="_blank" rel="noopener" class="wa-float-option"><i class="ph-fill ph-whatsapp-logo"></i> Utilidades</a>
+    <a href="https://api.whatsapp.com/send/?phone=5589999836120&text&type=phone_number&app_absent=0" target="_blank" rel="noopener" class="wa-float-option"><i class="ph-fill ph-whatsapp-logo"></i> Picos Plast Centro</a>
+    <a href="https://api.whatsapp.com/send/?phone=558994680892&text&type=phone_number&app_absent=0" target="_blank" rel="noopener" class="wa-float-option"><i class="ph-fill ph-whatsapp-logo"></i> Picos Plast BR</a>
+    <a href="https://api.whatsapp.com/send/?phone=5511998490742&text&type=phone_number&app_absent=0" target="_blank" rel="noopener" class="wa-float-option"><i class="ph-fill ph-whatsapp-logo"></i> Picos Plast Utilidades</a>
   </div>
   <button class="wa-float" id="waBtn" aria-label="WhatsApp" aria-expanded="false">
     <i class="ph-fill ph-whatsapp-logo"></i>
@@ -269,12 +269,13 @@
     });
   });
 </script>
+
 <script>
   /* WhatsApp float menu */
   (function(){
     var btn = document.getElementById('waBtn');
     var menu = document.getElementById('waMenu');
-    if (!btn) return;
+    if (!btn || !menu) return;
     btn.addEventListener('click', function(e){
       e.stopPropagation();
       var open = menu.hasAttribute('hidden');
