@@ -1895,33 +1895,42 @@ footer ul li a:hover::after { width: 100%; }
 
 /* ── Candidatura card (trabalhe.html) ──────────────────────────── */
 .candidatura-card {
-  background: var(--surface-2, #f8f9fa);
-  border: 1px solid var(--border, #e5e7eb);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
   border-radius: 16px;
   padding: 40px 36px;
   text-align: center;
 }
 .candidatura-icon {
   font-size: 3rem;
-  color: var(--primary, #0ea5e9);
+  color: var(--red);
   margin-bottom: 16px;
+}
+.candidatura-card > p {
+  color: var(--text-2);
+  font-size: var(--text-sm, .95rem);
+  line-height: 1.6;
+  max-width: 480px;
+  margin: 0 auto 24px;
 }
 .candidatura-lista {
   list-style: none;
-  padding: 0;
-  margin: 20px 0 24px;
-  display: flex;
+  padding: 16px 20px;
+  margin: 0 auto 28px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  display: inline-flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
   text-align: left;
-  max-width: 320px;
-  margin-inline: auto;
 }
 .candidatura-lista li {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   font-size: var(--text-sm, .9rem);
-  color: var(--text-2, #374151);
+  color: var(--text-2);
+  font-weight: 500;
 }
-.candidatura-lista i { color: var(--primary, #0ea5e9); font-size: 1.1rem; }
+.candidatura-lista i { color: #16a34a; font-size: 1.15rem; flex-shrink: 0; }
