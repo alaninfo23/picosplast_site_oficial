@@ -2038,3 +2038,13 @@ footer ul li a:hover::after { width: 100%; }
   .insta-handle { margin: 0 auto 16px; }
   .insta-mockup { display: none; }
 }
+
+/* ── Segundo catálogo na navbar ─────────────────────────────────── */
+.nav-cta--alt {
+  background: var(--surface-3) !important;
+  color: var(--text-2) !important;
+  border: 1px solid var(--border-mid) !important;
+}
+.nav-cta--alt:hover {
+  background: var(--surface-4) !important;
+}
