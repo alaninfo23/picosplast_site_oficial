@@ -2088,3 +2088,38 @@ footer ul li a:hover::after { width: 100%; }
   transition: background .15s;
 }
 .nav-dropdown-menu li a:hover { background: var(--surface-3); color: var(--text-1); }
+
+/* ── WhatsApp float menu ─────────────────────────────────────────── */
+.wa-float-wrap {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+.wa-float-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-end;
+}
+.wa-float-menu[hidden] { display: none; }
+.wa-float-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 16px;
+  background: #25d366;
+  color: #fff;
+  border-radius: 999px;
+  font-size: .85rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,.18);
+  white-space: nowrap;
+  transition: transform .15s, opacity .15s;
+}
+.wa-float-option:hover { transform: translateX(-4px); opacity: .9; }
