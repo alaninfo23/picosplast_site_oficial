@@ -2087,4 +2087,4 @@ footer ul li a:hover::after { width: 100%; }
   text-decoration: none;
   transition: background .15s;
 }
-.nav-dropdown-menu li a:hover { background: var(--surface-3); }
+.nav-dropdown-menu li a:hover { background: var(--surface-3); color: var(--text-1); }
