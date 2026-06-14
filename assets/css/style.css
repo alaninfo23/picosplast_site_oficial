@@ -328,14 +328,14 @@ button { font-family: inherit; }
   height: 64px;
   display: flex;
   align-items: center;
-  background: rgba(13,12,74,.75);
+  background: rgba(31,24,153,.75);
   backdrop-filter: blur(24px) saturate(2);
   -webkit-backdrop-filter: blur(24px) saturate(2);
   border-bottom: 1px solid rgba(255,255,255,.06);
   transition: background var(--t-base), box-shadow var(--t-base);
 }
 .navbar.scrolled {
-  background: rgba(13,12,74,.96);
+  background: rgba(31,24,153,.96);
   border-bottom-color: rgba(255,255,255,.1);
   box-shadow: 0 1px 0 rgba(255,255,255,.04), 0 8px 32px rgba(0,0,0,.4);
 }
