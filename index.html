@@ -9,6 +9,8 @@
     />
     <title>Picos Plast | Embalagens e Descartáveis — Picos, PI</title>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script
       src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js"
       defer
@@ -61,53 +63,122 @@
       <div class="hero-overlay"></div>
       <div class="hero-dots"></div>
 
-      <div class="hero-center">
-        <div class="badge">Referência no Piauí desde 2011</div>
-        <h1>
-          Embalagens e Descartáveis<br />
-          <span>para seu negócio</span>
-        </h1>
-        <p>
-          Distribuidora líder em embalagens para fast food, confeitaria,
-          sorveteria e panificação. Atendemos todo o Piauí com logística
-          própria e entrega rápida.
-        </p>
-        <div class="hero-btns">
-          <div class="wa-menu-container">
-            <div class="wa-float-menu" id="heroWaMenu" hidden>
-              <a href="https://api.whatsapp.com/send/?phone=5589999836120&text&type=phone_number&app_absent=0" target="_blank" rel="noopener" class="wa-float-option"><i class="ph-fill ph-whatsapp-logo"></i> Picos Plast Centro</a>
-              <a href="https://api.whatsapp.com/send/?phone=558994680892&text&type=phone_number&app_absent=0" target="_blank" rel="noopener" class="wa-float-option"><i class="ph-fill ph-whatsapp-logo"></i> Picos Plast BR</a>
-              <a href="https://api.whatsapp.com/send/?phone=5511998490742&text&type=phone_number&app_absent=0" target="_blank" rel="noopener" class="wa-float-option"><i class="ph-fill ph-whatsapp-logo"></i> Picos Plast Utilidades</a>
+      <div class="container hero-container">
+        <!-- LADO ESQUERDO: CONTEÚDO -->
+        <div class="hero-content">
+          <div class="badge">Referência no Piauí desde 2011</div>
+          <h1>
+            Embalagens e Descartáveis<br />
+            <span>para seu negócio</span>
+          </h1>
+          <p>
+            Distribuidora líder em embalagens para fast food, confeitaria,
+            sorveteria e panificação. Atendemos todo o Piauí com logística
+            própria e entrega rápida.
+          </p>
+          <div class="hero-btns">
+            <div class="wa-menu-container">
+              <div class="wa-float-menu" id="heroWaMenu" hidden>
+                <a href="https://api.whatsapp.com/send/?phone=5589999836120&text&type=phone_number&app_absent=0" target="_blank" rel="noopener" class="wa-float-option"><i class="ph-fill ph-whatsapp-logo"></i> Picos Plast Centro</a>
+                <a href="https://api.whatsapp.com/send/?phone=558994680892&text&type=phone_number&app_absent=0" target="_blank" rel="noopener" class="wa-float-option"><i class="ph-fill ph-whatsapp-logo"></i> Picos Plast BR</a>
+                <a href="https://api.whatsapp.com/send/?phone=5511998490742&text&type=phone_number&app_absent=0" target="_blank" rel="noopener" class="wa-float-option"><i class="ph-fill ph-whatsapp-logo"></i> Picos Plast Utilidades</a>
+              </div>
+              <button class="btn btn-whatsapp btn-lg" id="heroWaBtn" aria-label="WhatsApp" aria-expanded="false">
+                <i class="ph-fill ph-whatsapp-logo"></i> Falar no WhatsApp
+              </button>
             </div>
-            <button class="btn btn-whatsapp btn-lg" id="heroWaBtn" aria-label="WhatsApp" aria-expanded="false">
-              <i class="ph-fill ph-whatsapp-logo"></i> Falar no WhatsApp
-            </button>
+            <a href="produtos.html" class="btn btn-outline btn-lg">Ver Produtos →</a>
           </div>
-          <a href="produtos.html" class="btn btn-outline btn-lg">Ver Produtos →</a>
+        </div>
+
+        <!-- LADO DIREITO: CARROSSEL VISUAL -->
+        <div class="hero-visual">
+          <div class="swiper heroSwiper">
+            <div class="swiper-wrapper">
+              <!-- Unidade Centro -->
+              <div class="swiper-slide">
+                <div class="slide-inner">
+                  <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800" alt="Picos Plast Centro">
+                  <div class="slide-content">
+                    <h3>Picos Plast Centro</h3>
+                    <p>Sua loja de embalagens completa no coração de Picos.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Unidade BR -->
+              <div class="swiper-slide">
+                <div class="slide-inner">
+                  <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&q=80&w=800" alt="Picos Plast BR">
+                  <div class="slide-content">
+                    <h3>Picos Plast BR</h3>
+                    <p>Facilidade e acesso rápido na rodovia.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Unidade Utilidades -->
+              <div class="swiper-slide">
+                <div class="slide-inner">
+                  <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&q=80&w=800" alt="Picos Plast Utilidades">
+                  <div class="slide-content">
+                    <h3>Picos Plast Utilidades</h3>
+                    <p>Tudo para sua casa e negócio em um só lugar.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- CD -->
+              <div class="swiper-slide">
+                <div class="slide-inner">
+                  <img src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&q=80&w=800" alt="Picos Plast CD">
+                  <div class="slide-content">
+                    <h3>Centro de Distribuição</h3>
+                    <p>Logística avançada para atender todo o estado.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Arari Plast -->
+              <div class="swiper-slide">
+                <div class="slide-inner">
+                  <img src="https://images.unsplash.com/photo-1601600576337-c1d8a0d44fe9?auto=format&fit=crop&q=80&w=800" alt="Arari Plast">
+                  <div class="slide-content">
+                    <h3>Arari Plast</h3>
+                    <p>Nossa unidade em Araripina atendendo a região.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Controles -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
         </div>
       </div>
 
       <!-- Stats na base do hero -->
-      <div class="hero-stats-bar">
-        <div class="hero-stat">
-          <div class="num"><span class="counter" data-target="15">0</span><em>+ anos</em></div>
-          <div class="label">No mercado</div>
-        </div>
-        <div class="hero-stat">
-          <div class="num"><span class="counter" data-target="12">0</span><em>+</em></div>
-          <div class="label">Categorias</div>
-        </div>
-        <div class="hero-stat">
-          <div class="num"><span class="counter" data-target="50">0</span><em>+</em></div>
-          <div class="label">Cidades atendidas</div>
-        </div>
-        <div class="hero-stat">
-          <div class="num"><span class="counter" data-target="4">0</span><em> lojas</em></div>
-          <div class="label">Pontos de venda</div>
-        </div>
-        <div class="hero-stat">
-          <div class="num"><span class="counter" data-target="2">0</span></div>
-          <div class="label">Centros de distribuição</div>
+      <div class="hero-stats-wrapper">
+        <div class="container">
+          <div class="hero-stats-bar">
+            <div class="hero-stat">
+              <div class="num"><span class="counter" data-target="15">0</span><em>+ anos</em></div>
+              <div class="label">No mercado</div>
+            </div>
+            <div class="hero-stat">
+              <div class="num"><span class="counter" data-target="12">0</span><em>+</em></div>
+              <div class="label">Categorias</div>
+            </div>
+            <div class="hero-stat">
+              <div class="num"><span class="counter" data-target="50">0</span><em>+</em></div>
+              <div class="label">Cidades atendidas</div>
+            </div>
+            <div class="hero-stat">
+              <div class="num"><span class="counter" data-target="4">0</span><em> lojas</em></div>
+              <div class="label">Pontos de venda</div>
+            </div>
+            <div class="hero-stat">
+              <div class="num"><span class="counter" data-target="2">0</span></div>
+              <div class="label">Centros de distribuição</div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -976,7 +1047,32 @@
     });
   });
 </script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
+  /* Initialize Hero Swiper */
+  document.addEventListener('DOMContentLoaded', function() {
+    const heroSwiper = new Swiper('.heroSwiper', {
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  });
+
   /* WhatsApp float menu */
   (function(){
     function initWAMenu(btnId, menuId) {
