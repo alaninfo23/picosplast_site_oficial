@@ -375,7 +375,7 @@ button { font-family: inherit; }
   gap: 32px;
 }
 .nav-logo { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
-.nav-logo img { height: 52px; width: auto; object-fit: contain; }
+.nav-logo img { height: 52px; width: auto; object-fit: contain; transform: translateY(2px); }
 .nav-logo span { display: none; }
 
 .nav-links { display: flex; align-items: center; gap: 2px; }
@@ -538,6 +538,15 @@ button { font-family: inherit; }
   animation: heroFadeUp 0.8s 0.35s both;
 }
 
+.hero-btns {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  animation: heroFadeUp 0.8s 0.45s both;
+}
+
 /* LADO DIREITO: CARROSSEL COM TRATAMENTO VISUAL ÚNICO */
 .hero-visual {
   flex: 1;
@@ -685,6 +694,8 @@ button { font-family: inherit; }
   .hero-content h1 { text-align: center; }
   .hero-content > p { margin-left: auto; margin-right: auto; }
   .hero-btns { justify-content: center; }
+  .hero-btns > * { width: 100%; max-width: 300px; }
+  .wa-menu-container .btn { width: 100%; }
   .hero-visual { max-width: 600px; }
   .hero-stats-bar { flex-wrap: wrap; }
   .hero-stat { flex: none; width: 33.33%; padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.08); }
