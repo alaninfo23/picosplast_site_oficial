@@ -322,9 +322,13 @@ button { font-family: inherit; }
    NAVBAR GLASSMORPHISM PREMIUM
 ============================================= */
 .brand-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   height: 3px;
-  width: 100%;
+  z-index: 10;
 }
 .brand-accent span { flex: 1; height: 100%; }
 .brand-accent .gray { background: #949596; }
@@ -337,17 +341,12 @@ button { font-family: inherit; }
   z-index: 1000;
   height: 64px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   background: rgba(31,24,153,.75);
   backdrop-filter: blur(24px) saturate(2);
   -webkit-backdrop-filter: blur(24px) saturate(2);
   border-bottom: 1px solid rgba(255,255,255,.06);
   transition: background var(--t-base), box-shadow var(--t-base);
-}
-.navbar .nav-container {
-  flex: 1;
-  display: flex;
-  align-items: center;
 }
 .navbar.scrolled {
   background: rgba(31,24,153,.96);
@@ -355,13 +354,19 @@ button { font-family: inherit; }
   box-shadow: 0 1px 0 rgba(255,255,255,.04), 0 8px 32px rgba(0,0,0,.4);
 }
 
+/* Linha luminosa no topo */
+.navbar::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 20%; right: 20%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(31,24,153,.6), rgba(229,57,53,.6), transparent);
+  opacity: .7;
+}
+
 .nav-container {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px;
-}
-
   margin: 0 auto;
   padding: 0 24px;
   display: flex;
@@ -877,7 +882,7 @@ button { font-family: inherit; }
    PAGE HEADERS PREMIUM
 ============================================= */
 .page-header {
-  background: linear-gradient(140deg, #0d0c4a 0%, #1f1899 55%, #1a1580 100%);
+  background: linear-gradient(140deg, #1f1899 0%, #1f1899 55%, #1a1580 100%);
   padding: 136px 0 88px;
   text-align: center;
   color: #fff;
