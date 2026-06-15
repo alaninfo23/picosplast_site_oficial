@@ -41,8 +41,20 @@
               📋 Catálogos <i class="ph-bold ph-caret-down nav-caret"></i>
             </button>
             <ul class="nav-dropdown-menu">
-              <li><a href="https://drive.google.com/file/d/12jltAWs258PlwSHk5lYboxj0jJnEserR/view" target="_blank">Embalagens</a></li>
-              <li><a href="https://drive.google.com/file/d/1s4vKlvBD6QZzIEH_XVZ_IaxZGR6bDhvY/view" target="_blank">Utilidades</a></li>
+              <li>
+                <a
+                  href="https://drive.google.com/file/d/12jltAWs258PlwSHk5lYboxj0jJnEserR/view"
+                  target="_blank"
+                  >Embalagens</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://drive.google.com/file/d/1s4vKlvBD6QZzIEH_XVZ_IaxZGR6bDhvY/view"
+                  target="_blank"
+                  >Utilidades</a
+                >
+              </li>
             </ul>
           </li>
         </ul>
@@ -217,15 +229,23 @@
             <ul class="footer-contact">
               <li>
                 <span class="icon">📞</span>
-                <div>(89) 2101-0100 / (89) 9973-3789</div>
+                <div class="contact-numbers">
+                  <div class="contact-city">
+                    <strong>Picos:</strong>
+                    <div>(89) 99983-6120</div>
+                    <div>(89) 99468-0892</div>
+                    <div>(11) 99849-0742</div>
+                  </div>
+
+                  <div class="contact-city">
+                    <strong>Araripina:</strong>
+                    <div>(89) 98102-6492</div>
+                  </div>
+                </div>
               </li>
               <li>
                 <span class="icon">✉️</span>
                 <div>picos-plast@gmail.com</div>
-              </li>
-              <li>
-                <span class="icon">📍</span>
-                <div>Rua Santo Antônio, 136 — Centro, Picos - PI</div>
               </li>
             </ul>
           </div>
@@ -240,11 +260,34 @@
 
     <div class="wa-float-wrap" id="waFloat">
       <div class="wa-float-menu" id="waMenu" hidden>
-        <a href="https://api.whatsapp.com/send/?phone=5589999836120&text&type=phone_number&app_absent=0" target="_blank" rel="noopener" class="wa-float-option"><i class="ph-fill ph-whatsapp-logo"></i> Picos Plast Centro</a>
-        <a href="https://api.whatsapp.com/send/?phone=558994680892&text&type=phone_number&app_absent=0" target="_blank" rel="noopener" class="wa-float-option"><i class="ph-fill ph-whatsapp-logo"></i> Picos Plast BR</a>
-        <a href="https://api.whatsapp.com/send/?phone=5511998490742&text&type=phone_number&app_absent=0" target="_blank" rel="noopener" class="wa-float-option"><i class="ph-fill ph-whatsapp-logo"></i> Picos Plast Utilidades</a>
+        <a
+          href="https://api.whatsapp.com/send/?phone=5589999836120&text&type=phone_number&app_absent=0"
+          target="_blank"
+          rel="noopener"
+          class="wa-float-option"
+          ><i class="ph-fill ph-whatsapp-logo"></i> Picos Plast Centro</a
+        >
+        <a
+          href="https://api.whatsapp.com/send/?phone=558994680892&text&type=phone_number&app_absent=0"
+          target="_blank"
+          rel="noopener"
+          class="wa-float-option"
+          ><i class="ph-fill ph-whatsapp-logo"></i> Picos Plast BR</a
+        >
+        <a
+          href="https://api.whatsapp.com/send/?phone=5511998490742&text&type=phone_number&app_absent=0"
+          target="_blank"
+          rel="noopener"
+          class="wa-float-option"
+          ><i class="ph-fill ph-whatsapp-logo"></i> Picos Plast Utilidades</a
+        >
       </div>
-      <button class="wa-float" id="waBtn" aria-label="WhatsApp" aria-expanded="false">
+      <button
+        class="wa-float"
+        id="waBtn"
+        aria-label="WhatsApp"
+        aria-expanded="false"
+      >
         <i class="ph-fill ph-whatsapp-logo"></i>
       </button>
     </div>
@@ -265,41 +308,46 @@
 
       /* Magnetic buttons */
     </script>
-  
-<script>
-  /* Dropdown catálogos */
-  document.querySelectorAll('.nav-dropdown-toggle').forEach(function(btn) {
-    btn.addEventListener('click', function(e) {
-      e.stopPropagation();
-      var li = btn.closest('.nav-dropdown');
-      var open = li.classList.toggle('open');
-      btn.setAttribute('aria-expanded', open);
-    });
-  });
-  document.addEventListener('click', function() {
-    document.querySelectorAll('.nav-dropdown.open').forEach(function(li) {
-      li.classList.remove('open');
-      li.querySelector('.nav-dropdown-toggle').setAttribute('aria-expanded', 'false');
-    });
-  });
-</script>
-<script>
-  /* WhatsApp float menu */
-  (function(){
-    var btn = document.getElementById('waBtn');
-    var menu = document.getElementById('waMenu');
-    if (!btn) return;
-    btn.addEventListener('click', function(e){
-      e.stopPropagation();
-      var open = menu.hasAttribute('hidden');
-      open ? menu.removeAttribute('hidden') : menu.setAttribute('hidden','');
-      btn.setAttribute('aria-expanded', String(open));
-    });
-    document.addEventListener('click', function(){
-      menu.setAttribute('hidden','');
-      btn.setAttribute('aria-expanded','false');
-    });
-  })();
-</script>
-</body>
+
+    <script>
+      /* Dropdown catálogos */
+      document.querySelectorAll('.nav-dropdown-toggle').forEach(function (btn) {
+        btn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          var li = btn.closest('.nav-dropdown');
+          var open = li.classList.toggle('open');
+          btn.setAttribute('aria-expanded', open);
+        });
+      });
+      document.addEventListener('click', function () {
+        document.querySelectorAll('.nav-dropdown.open').forEach(function (li) {
+          li.classList.remove('open');
+          li.querySelector('.nav-dropdown-toggle').setAttribute(
+            'aria-expanded',
+            'false',
+          );
+        });
+      });
+    </script>
+    <script>
+      /* WhatsApp float menu */
+      (function () {
+        var btn = document.getElementById('waBtn');
+        var menu = document.getElementById('waMenu');
+        if (!btn) return;
+        btn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          var open = menu.hasAttribute('hidden');
+          open
+            ? menu.removeAttribute('hidden')
+            : menu.setAttribute('hidden', '');
+          btn.setAttribute('aria-expanded', String(open));
+        });
+        document.addEventListener('click', function () {
+          menu.setAttribute('hidden', '');
+          btn.setAttribute('aria-expanded', 'false');
+        });
+      })();
+    </script>
+  </body>
 </html>
