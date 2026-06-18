@@ -26,10 +26,10 @@
   --red-glow-sm: rgba(229,57,53,.12);
 
   /* Superfícies */
-  --surface:     #FFFFFF;
-  --surface-2:   #F8FAFC;
-  --surface-3:   #F1F5F9;
-  --surface-4:   #E8EDF5;
+  --surface:     #F4F5F9;
+  --surface-2:   #ECEEF5;
+  --surface-3:   #E4E6F0;
+  --surface-4:   #D8DBE8;
   
   /* Textura sutil para fundos claros */
   --dot-pattern: radial-gradient(rgba(15, 23, 42, 0.04) 1px, transparent 1px);
@@ -688,11 +688,12 @@ button { font-family: inherit; }
 }
 
 @media (max-width: 992px) {
-  .hero { padding: 100px 0 60px; }
-  .hero-container { flex-direction: column; text-align: center; }
+  .hero { padding: 90px 0 50px; }
+  .hero-container { flex-direction: column; text-align: center; gap: 32px; }
   .hero-content { max-width: 100%; }
-  .hero-content h1 { text-align: center; }
-  .hero-content > p { margin-left: auto; margin-right: auto; }
+  .hero-content .badge { margin-bottom: 16px; }
+  .hero-content h1 { text-align: center; margin-bottom: 16px; }
+  .hero-content > p { margin-left: auto; margin-right: auto; margin-bottom: 32px; }
   .hero-btns { justify-content: center; }
   .hero-btns > * { width: 100%; max-width: 300px; }
   .wa-menu-container .btn { width: 100%; }
@@ -710,6 +711,7 @@ button { font-family: inherit; }
 }
 
 @media (max-width: 480px) {
+  .hero { padding: 80px 0 40px; }
   .hero-stat { width: 100%; border-right: none; }
   .hero-content h1 { font-size: 2.2rem; }
 }
@@ -1329,8 +1331,8 @@ button { font-family: inherit; }
 .info-item p, .info-item a { font-size: var(--text-sm); color: var(--text-3); display: block; line-height: 1.6; }
 .info-item a:hover { color: var(--blue); }
 .wa-cta-box {
-  background: linear-gradient(135deg, #052e16, #064e3b);
-  border: 1px solid rgba(34,197,94,.15);
+  background: linear-gradient(135deg, #17147a, #1f1899);
+  border: 1px solid rgba(31,24,153,.35);
   border-radius: var(--r-lg);
   padding: 28px;
   text-align: center;
@@ -1341,7 +1343,7 @@ button { font-family: inherit; }
 .wa-cta-box::before {
   content: '';
   position: absolute; inset: 0;
-  background: radial-gradient(ellipse at 50% 110%, rgba(34,197,94,.1), transparent 70%);
+  background: radial-gradient(ellipse at 50% 110%, rgba(31,24,153,.2), transparent 70%);
 }
 .wa-cta-box h3 { color: #fff; font-weight: 800; margin-bottom: 8px; font-size: var(--text-base); position: relative; z-index: 1; letter-spacing: -.02em; }
 .wa-cta-box p  { color: rgba(255,255,255,.65); font-size: var(--text-sm); margin-bottom: 20px; position: relative; z-index: 1; }
